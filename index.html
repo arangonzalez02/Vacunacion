@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendario de Vacunación CLM</title>
+    <link rel="shortcut icon" href="img/logos_sescam.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+
+    
+    <div class="header">
+      <!-- logo jccm -->
+      <img
+        src="img/logo_Castilla-La-Mancha.png"
+        alt="Logo Junta de Comunidades de Castilla La Mancha"
+      />
+      <!-- título de la pagina -->
+      <h2>Calendario de Vacunación Infantil</h2>
+      <!-- logo sescam -->
+      <img
+        src="img/logos_sescam.png"
+        alt="Logo del Servicio de Salud de Castilla La Mancha"
+      />
+    </div>
+
+    <hr>
+
+    <div class="accesibilidad">
+        <h2>Accesibilidad</h2>
+        <button id="aumentar">Aumentar Fuente</button>
+        <button id="reducir">Reducir Fuente</button>
+        <button id="escalaGrises">Escala de Grises</button>
+        <button id="altoContraste">Alto Contraste</button>
+        <button id="restablecer">Restablecer</button>
+      </div>
+
+      <button onclick="window.print()">Imprimir</button>
+
+      <div class="icono-accesibilidad" onclick="mostrarOcultar()" accesskey="a">
+        <img src="img/icono_accesible.svg" alt="Icono accesibilidad" />
+        <!-- icono de accesibilidad -->
+      </div>
+
+    <section class="col-12 row container">
+      <div class="col-4 row-columna">
+        <h2>Indica la edad que tiene</h2>
+        <div>
+          <select name="edad" id="edad" accesskey="s">
+            <option value="">Seleccione la edad</option>
+          </select>
+          <button id="mostrar-vacuna" accesskey="v">Vacunas</button>
+        </div>
+        <div>
+            <p id="vacuna" class="center"></p>
+        </div>
+      </div>
+      <div class="col-7 row calendario">
+        <img
+          src="img/calendario_vacunacion.png"
+          alt="Calendario de Vacunacion"
+        />
+      </div>
+    </section>
+
+    <!-- barra lateral de accesibilidad -->
+   
+
+<hr>
+
+    <footer class="footer">
+      <div class="foto">
+        <img
+          src="img/calendario_vacunacion_footer.png"
+          alt="Calendario de Vacunación"
+        />
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
